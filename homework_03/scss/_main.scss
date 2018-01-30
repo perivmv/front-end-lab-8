@@ -1,0 +1,153 @@
+$contentBackground: null !default;
+
+@mixin title-color {
+  color: $titleColor;
+}
+		
+@mixin float-img($float, $margin) {
+	float: $float;
+	margin: $margin;
+}
+
+body{
+	background: $bodyBackground;
+	color: $textColor;
+	font-family: "Times New Roman", Times, serif;
+	}
+a{
+	color: $urlColor
+}
+
+#content {
+	width: $contentWidth;
+	background: $contentBackground;
+	margin: 0 auto;
+	padding: 20px;
+
+	.brief{
+		background: $briefBackground;
+		width: $briefWidth;
+		margin: $briefMargin;
+		padding: $briefPadding;
+		float: $briefLeft;
+		color: $briefColor;
+		box-sizing: border-box;
+		}
+		
+  	h1{
+		text-align:center;
+		@include title-color;
+		}
+	h2{
+		@include title-color;
+		}
+	img{	
+		border: 2px solid $titleColor;
+		padding: 2px;
+		}
+	
+	.img-left{
+		@include float-img(left, 0 20px 10px 0);	
+	}
+	.img-right{
+		@include float-img(right, 0 0 10px 20px);
+	}
+	
+	table{
+		border-collapse: collapse;
+		display: block;
+		padding-bottom: 20px;
+		caption{
+			text-align: right;
+			color: $captionColor;
+			}		
+			tr{
+				th{
+					background: $thBackground;
+					text-transform: uppercase;
+					padding: 10px 15px;
+					font-weight: normal;
+					text-align: left;
+					border-right: 1px solid #fff;
+					}
+				th:last-child{
+					border:none;
+					}	
+				td{
+					background: $tdBackground; 
+					padding: 10px 15px;
+					border-bottom:1px solid $thBackground;
+				}
+			} 
+	}
+
+	form{ 
+		label{
+			width:100%;
+			text-transform:uppercase;
+			color: $labelColor;
+			display: block;
+			}
+		
+		input[type=text], 
+		input[type=email], 
+		textarea{
+			width:100%;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			}
+		textarea{
+			min-height:150px;
+			max-width:100%;	
+			}	
+		.input-box{
+			padding:5px;
+			margin: 5px 0 15px 0;
+			}
+		
+		.surname{ 
+			width: calc(50% - 5px);
+			float: right;
+			padding-right: 0;
+			padding-left: 5px;
+			}
+		
+		.firstname{
+			width: calc(50% - 5px);
+			float: left;
+			padding-left: 0;
+			padding-right: 5px;
+			}
+		
+		.form-group{
+			width:100%;
+			display: block;
+			}
+		
+		.btn{
+			background: none;
+			border: 1px solid $btnColor;
+			color: $btnColor;
+			text-transform:uppercase;
+			font-size: 1.2em;
+			padding: 10px 70px;
+			}
+		
+		.btn:hover{
+			background: $titleColor;
+			border: 1px solid $btnhColor;
+			color: $btnhColor;
+			text-transform:uppercase;
+			font-size: 1.2em;
+			padding: 10px 70px;
+			
+			}	
+		
+		.button{
+			margin-bottom: 10px;
+			
+			}	
+		
+	}
+	
+}

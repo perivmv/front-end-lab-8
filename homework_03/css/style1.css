@@ -1,0 +1,101 @@
+body {
+  background: #dcbb9a;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif; }
+
+a {
+  color: #3d70a1; }
+
+#content {
+  width: 960px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 20px; }
+  #content .brief {
+    background: #fadcba;
+    width: 420px;
+    margin: 0 20px 0 0;
+    padding: 20px;
+    float: left;
+    color: #000000;
+    box-sizing: border-box; }
+  #content h1 {
+    text-align: center;
+    color: #893c00; }
+  #content h2 {
+    color: #893c00; }
+  #content img {
+    border: 2px solid #893c00;
+    padding: 2px; }
+  #content .img-left {
+    float: left;
+    margin: 0 20px 10px 0; }
+  #content .img-right {
+    float: right;
+    margin: 0 0 10px 20px; }
+  #content table {
+    border-collapse: collapse;
+    display: block;
+    padding-bottom: 20px; }
+    #content table caption {
+      text-align: right;
+      color: #000000; }
+    #content table tr th {
+      background: #e0e0e0;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      font-weight: normal;
+      text-align: left;
+      border-right: 1px solid #fff; }
+    #content table tr th:last-child {
+      border: none; }
+    #content table tr td {
+      background: #fff;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e0e0e0; }
+  #content form label {
+    width: 100%;
+    text-transform: uppercase;
+    color: #808080;
+    display: block; }
+  #content form input[type=text],
+  #content form input[type=email],
+  #content form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc; }
+  #content form textarea {
+    min-height: 150px;
+    max-width: 100%; }
+  #content form .input-box {
+    padding: 5px;
+    margin: 5px 0 15px 0; }
+  #content form .surname {
+    width: calc(50% - 5px);
+    float: right;
+    padding-right: 0;
+    padding-left: 5px; }
+  #content form .firstname {
+    width: calc(50% - 5px);
+    float: left;
+    padding-left: 0;
+    padding-right: 5px; }
+  #content form .form-group {
+    width: 100%;
+    display: block; }
+  #content form .btn {
+    background: none;
+    border: 1px solid #3d70a1;
+    color: #3d70a1;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 10px 70px; }
+  #content form .btn:hover {
+    background: #893c00;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 10px 70px; }
+  #content form .button {
+    margin-bottom: 10px; }
