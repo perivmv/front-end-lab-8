@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+strong{font-weight:bold;}
+/**************/
+body {
+	font-family: "Open Sans", sans-serif;
+}
+	
+#container{
+    width: 100%;
+min-width: 900px;}
+
+#main {
+height:740px;
+background: url('../img/apples.jpg') no-repeat center center;
+    background-size: cover;
+}
+header {position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 999;}
+#main h1{
+	display:block; 
+	margin: 0 auto; 
+	text-align: center;
+    line-height: 56px;
+    font-size: 56px;
+    text-transform: uppercase;	
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+#main h1:after{content:"TM";
+    font-size: 20px;
+    vertical-align: top;
+    letter-spacing: 0;}
+#main h1 span{ font-size: 80px;}	
+
+#main button{
+    display: block;
+    margin: 10px auto;
+    padding: 16px 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);	
+    border: 2px solid #fff;
+	}
+
+
+#block1{height:360px;}
+
+.container{
+	max-width:1200px;
+	margin:0 auto;
+	padding: 40px;
+	}
+.logo{
+	color:#fff;
+	text-transform: uppercase;
+	float:left;
+	}	
+	
+nav a{color:#fff; text-decoration: none; }	
+.nav{float: right;}
+.nav li {
+    position: relative;
+    display: block;
+	float:left;
+}
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.nav li a:hover,
+.nav li a:active ,
+.nav li a:focus {
+    color: #fff;
+    border-bottom: 1px solid #B7C8D9;}
+.head{margin: 0 auto; text-align: center; color:#fff;vertical-align: middle;
+padding: 300px 0 100px 0;}
+
+
+
+/*=====*/
+.first div:nth-of-type(1) {
+  width: 48%;
+  float: left;
+  font-size: 20px;
+  padding:100px 0;
+}
+
+.first div:nth-of-type(2) {
+  width: 48%;
+  float: right;
+  padding:100px 0;
+}
+/*=====*/
+#feature, #subscribe{
+    background-color: #F3F3F3;
+    overflow: hidden;}
+	
+.featured h2{
+    padding: 20px 10px;
+    margin-bottom: 30px;	
+    font-weight: normal;
+	}	
+.featured{text-align:center;
+  font-size:16px;}
+.featured div:nth-of-type(1) {
+  width: 65%;
+  float: left;
+  font-size:16px;
+}
+.featured div:nth-of-type(2) {
+  width: 32%;
+  float: right;
+}
+
+.featured div:nth-of-type(3) {
+  width: 32%;
+  float: left;
+  font-size:16px;
+}
+
+.featured div:nth-of-type(4) {
+  width: 65%;
+  float: right;
+}
+.feature img{width:100%;}
+.feature{position:relative; height:300px; margin-bottom:30px; overflow:hidden; }
+.rate{
+	width:72px;
+	position: absolute;
+	top:0px;
+	right:20px; 
+	color: #fff;
+	background: rgba(0, 0, 0, 0.4);
+	border: 2px solid #fff;
+	}
+.feature-title{
+	
+    text-align: left;
+	position: absolute;
+	bottom:0px;
+	margin:0;
+	padding:20px;
+	left:0px; 
+	color: #fff;
+	width:100%;
+	background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4), transparent);
+	}
+/*=====*/
+#subscribe form{
+	background-color:#fff;
+	padding: 60px 20px;
+	}
+#subscribe form label{  
+    display: inline-block;
+	width: 40%;
+	font-size: 20px;
+	text-align: center;
+  }
+#subscribe form .mail {
+	display: inline-block;
+	width: 400px;
+	height: 50px;
+	padding: 10px;
+	background-color: #f3f3f3;
+	margin: auto 0;
+	font-weight: bold;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+#subscribe form button{
+	display: inline-block;	
+	margin-left: -5px;
+	height: 50px;
+	width: 180px;
+	border: 1px solid #000;
+	background-color: #343638;
+	color: #e8e8e8;
+	}
+/*=====*/
+footer .container{padding-bottom:10px;}
+footer .container .colfoot{
+	width:21%; 
+	float: left;
+	padding:2%;
+}
+
+footer .container p{color: #a4a4a4;}
+footer .container .tweet-time{color: #f0f0f0}
+footer .container h3{
+  font-size:16px;
+  font-weight:bold;
+  padding:20px 0;
+}
+
+
+footer .container .nav-footer{
+	width:100%;
+	overflow:hidden;
+	border-top: 1px solid #f0f0f0;
+}
+footer .container .copy{
+	color: #a4a4a4;
+	padding: 10px 0;
+	width: 20%;
+	float:left;
+  }
+
+footer .container .nav-footer ul {
+  width: 70%;
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+}
+footer .container .nav-footer ul li {
+  padding: 10px 20px;
+  list-style-type: none;
+}
+footer .container .nav-footer ul li a {
+  color: #343638;
+  font-weight: bold;
+  text-decoration: none;
+}
