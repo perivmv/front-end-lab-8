@@ -241,7 +241,7 @@ footer .copy{
 	header .container nav li{
 		align-items: center;
 		border-bottom: 1px solid #ccc;
-		padding-left: 10px;
+		padding-left: 20px;
 		}
 	header .container nav li:first-child{
 		border-top: 1px solid #ccc;
