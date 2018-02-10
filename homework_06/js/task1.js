@@ -21,18 +21,18 @@
 			var area = Math.sqrt(p * ((p - a) * (p - b) * (p - c)));
 			var area = Math.round(area * 100) / 100;
 			var type = 'Type of triangle is ';
-				
-			if (a == b && a == c && b == c) {
+			
+			if ((aa == b2c2) || (bb == a2c2) || (cc == a2b2)) {
+				console.log(type + 'right triangle and the square is' + ' ' + area);
+			}
+			
+			else if (a == b && a == c && b == c) {
 				console.log(type + 'equilateral and the square is' + ' ' + area);
-			} 
+			}			
 			
 			else if (a == b && a != c || a == c && a != b || b == c && b != a) {
 				console.log(type + 'isosceles and the square is' + ' ' + area );
-			} 
-			
-			else if ((aa == b2c2) || (bb == a2c2) || (cc == a2b2)) {
-				console.log(type + 'right triangle and the square is' + ' ' + area);
-			}
+			}  
 			
 			else  {
 				console.log(type + 'scalene and the square is' + ' ' + area);
