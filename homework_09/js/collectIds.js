@@ -1,3 +1,11 @@
+// reactivex.io
+// Exercise 6 - filter
+// June 28, 2016
+
+
+// Use MakerSquare function filter to generate a new array containing movies with a ration of 5.
+
+// a)  array of new releases
 var movies = [
 		{
 			"id": 70111470,
