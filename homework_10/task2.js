@@ -31,10 +31,48 @@ function showResult(fighter) {
   console.log('- Properties:', fighter.getStats());
 }
 
-/**
- * Your code goes here
- * function foo() { ... }
- */
+
+function fighter(player) {
+	let combathistory  = {wins: 0, loses: 0 };
+
+	function getName() {
+		return player.name;
+	}
+
+	function block(){
+		return Math.random() >= 0.5;
+	}
+
+	function getStats(){
+		return player;
+	}
+
+	function getCombatHistory() {  
+		return combathistory;
+	}
+
+	function fight(enemy){
+
+		if (enemy.block()){
+			return false;
+		}   
+		else {
+			enemy.getStats().hp -= this.getStats().attack;
+				if(enemy.getStats().hp === 0) {
+					this.getCombatHistory().wins += 1;
+				enemy.getCombatHistory().loses = 1;
+			}
+			return true;
+		}
+	}
+	return {
+		getName,
+		block,
+		getStats,
+		getCombatHistory,
+		fight
+		}
+}
 
 /**
  * The following code must be valid after implementation!
