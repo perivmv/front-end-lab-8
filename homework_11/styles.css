@@ -1,0 +1,39 @@
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+i{display: block; float: left;}
+p {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+	display: block; float: left;
+}
+.list-item {
+    width: 100%;
+	display: block;
+	float: left;
+	padding:5px;
+}
+.list-item:hover {
+    background-color:#ccc;
+}
+
+.file i {
+    color: gray;
+	float: left;   
+}
+.folder i {
+    color: #edbc0b;
+    float: left;
+    line-height: 20px;
+}
+.empty {
+    font-style: italic;
+	padding-left:30px;
+}
+.closed ul, .closed li {
+  display: none;
+}
+
+
